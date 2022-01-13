@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <h1>Валютный Калькылятор</h1>
+      <div class="container">
+        <div class="desde">
+          Из
+          <select name="" id="">
+            <option value="RUB">Рубли</option>
+            <option value="EUR">Евро</option>
+            <option value="USD">Доллар</option>
+            <option value="GBP">Фунт стерлингов</option>
+            <option value="JPY">Японская иена</option>
+            <option value="CNY">Китайский юань</option>
+            <option value="UAH">Украинская гривна</option>
+          </select>
+        </div>
+
+        <div class="cantidad">Курс <input type="number" name="cambio" disabled /></div>
+
+        <div class="hasta">
+          B
+          <select name="" id="">
+            <option value="ignore" selected>-</option>
+            <option value="RUB">Рубли</option>
+            <option value="EUR">Евро</option>
+            <option value="USD">Доллар</option>
+            <option value="GBP">Фунт стерлингов</option>
+            <option value="JPY">Японская иена</option>
+            <option value="CNY">Китайский юань</option>
+            <option value="UAH">Украинская гривна</option>
+          </select>
+        </div>
+
+        <div class="transferencia">
+          Переводимая сумма
+          <input
+            type="number"
+            name="transferencia"
+            step="0.1"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+          />
+        </div>
+      </div>
+      <div class="resultado"><span>Результат</span> <textarea name="" id="" cols="60" rows="1"></textarea></div>
+      <div class="botones">
+        <button class="boton1" disabled>Посчитать</button>
+        <button class="boton2" type="reset">Очистить</button>
+      </div>
+    </section>
+
+    <footer>
+      ТюмГУ | Магистратура | Прикладная Информатика| 1-й Семестр | РКЧИС | <b>Портильо Мачадо Ронни Давид</b> |
+      <b>Лаб 10</b> |
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+
+* {
+    font-family: Verdana;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+section {
+    background-color: #66CDAA;
+    width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+    border: solid 4px black;
+}
+
+section > .container {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.desde, .hasta, .cantidad, .transferencia {
+    flex: 50%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.desde, .cantidad {
+    margin-top: 30px;
+}
+
+section > .container2 {
+    display: flex;
+    justify-content: right;
+}
+
+.resultado {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    width: 80%;
+    padding: 10px;
+    height: 50px;
+}
+
+span {
+    padding: 2%;
+    margin-bottom: 10%;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.boton1, .boton2 {
+    font-size: 20px;
+}
+
+input {
+    margin: 3%;
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
